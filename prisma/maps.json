@@ -1,0 +1,494 @@
+[
+  {
+    "name": "LiftOff",
+    "image": "liftoff.jpg",
+    "maps": [
+      {
+        "name": "STRAW BALE",
+        "image": "STRAW BALE.jpeg",
+        "tracks": [
+          {
+            "name": "01 - FIELD DAY",
+            "image": "STRAW BALE.jpeg"
+          },
+          {
+            "name": "02 - AFTER HOURS",
+            "image": "STRAW BALE.jpeg"
+          },
+          {
+            "name": "03 - LOOP THE SILO",
+            "image": "STRAW BALE.jpeg"
+          },
+          {
+            "name": "04 - AGAINST THE GRAIN",
+            "image": "STRAW BALE.jpeg"
+          },
+          {
+            "name": "05 - BARN BURNER",
+            "image": "STRAW BALE.jpeg"
+          },
+          {
+            "name": "06 - FURTHER AFIELD",
+            "image": "STRAW BALE.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "PINE VALLEY",
+        "image": "PINE VALLEY.jpeg",
+        "tracks": [
+          {
+            "name": "01 - FOREST FOR THE TREES",
+            "image": "PINE VALLEY.jpeg"
+          },
+          {
+            "name": "02 - THE GREAT OUTDOORS",
+            "image": "PINE VALLEY.jpeg"
+          },
+          {
+            "name": "03 - ROCK AND ROLL",
+            "image": "PINE VALLEY.jpeg"
+          },
+          {
+            "name": "04 - WILDCAMPING",
+            "image": "PINE VALLEY.jpeg"
+          },
+          {
+            "name": "05 - TIMBER",
+            "image": "PINE VALLEY.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "MINUS TWO",
+        "image": "MINUS TWO.jpeg",
+        "tracks": [
+          {
+            "name": "01 - TURN SIGNALS",
+            "image": "MINUS TWO.jpeg"
+          },
+          {
+            "name": "02 - SARO'S REVENGE",
+            "image": "MINUS TWO.jpeg"
+          },
+          {
+            "name": "03 - THE UNDERGROUND SCENE",
+            "image": "MINUS TWO.jpeg"
+          },
+          {
+            "name": "04 - CONCRETE JUNGLE",
+            "image": "MINUS TWO.jpeg"
+          },
+          {
+            "name": "05 - DRIFT STYLE",
+            "image": "MINUS TWO.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "AUTUMN FIELDS",
+        "image": "AUTUMN FIELDS.jpeg",
+        "tracks": [
+          {
+            "name": "01 - WALK IN THE PARK",
+            "image": "AUTUMN FIELDS.jpeg"
+          },
+          {
+            "name": "02 - SWEATER WEATHER",
+            "image": "AUTUMN FIELDS.jpeg"
+          },
+          {
+            "name": "03 - STICK TIME",
+            "image": "AUTUMN FIELDS.jpeg"
+          },
+          {
+            "name": "04 - MUDLARKING",
+            "image": "AUTUMN FIELDS.jpeg"
+          },
+          {
+            "name": "05 - A LEAGUE OF ITS OWN",
+            "image": "AUTUMN FIELDS.jpeg"
+          },
+          {
+            "name": "06 - AUTUMN AIRSPACE",
+            "image": "AUTUMN FIELDS.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "HANGAR C03",
+        "image": "HANGAR C03.jpeg",
+        "tracks": [
+          {
+            "name": "01 - SHIPMENTS",
+            "image": "HANGAR C03.jpeg"
+          },
+          {
+            "name": "02 - PARCEL TRACKING",
+            "image": "HANGAR C03.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "LIFTOFF ARENA",
+        "image": "LIFTOFF ARENA.jpeg",
+        "tracks": [
+          {
+            "name": "01 - MEXICAN WAVE",
+            "image": "LIFTOFF ARENA.jpeg"
+          },
+          {
+            "name": "02 - SWING FOR THE BLEACHERS",
+            "image": "LIFTOFF ARENA.jpeg"
+          },
+          {
+            "name": "03 - GRANDSTAND",
+            "image": "LIFTOFF ARENA.jpeg"
+          },
+          {
+            "name": "04 - INFINITY LOOP",
+            "image": "LIFTOFF ARENA.jpeg"
+          },
+          {
+            "name": "05 - IN THE SPOTLIGHT",
+            "image": "LIFTOFF ARENA.jpeg"
+          },
+          {
+            "name": "06 - TOUCHDOWN",
+            "image": "LIFTOFF ARENA.jpeg"
+          },
+          {
+            "name": "07 - ROUND AND AROUND",
+            "image": "LIFTOFF ARENA.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "DUBAI LEGENDS",
+        "image": "DUBAI LEGENDS.jpeg",
+        "tracks": [
+          {
+            "name": "01 - LEGENDARY NIGHT",
+            "image": "DUBAI LEGENDS.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "HANNOVER",
+        "image": "HANNOVER.jpeg",
+        "tracks": [
+          {
+            "name": "01 - THE BIGGEST YET",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "02 - BRING ME A SHRUBBERY",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "03 - CONE OFF",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "04 - AROUND THE BLOCK",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "05 - GOT INTEL",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "[BOMBA] ATOMICA",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "[BOMBA] OOPS!",
+            "image": "HANNOVER.jpeg"
+          },
+          {
+            "name": "[NADIBFPV] SHIKY TRICKY",
+            "image": "HANNOVER.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "PARIS DRONE FESTIVAL",
+        "image": "PARIS DRONE FESTIVAL.jpeg",
+        "tracks": [
+          {
+            "name": "01 - CITY TRIP",
+            "image": "PARIS DRONE FESTIVAL.jpeg"
+          },
+          {
+            "name": "02 - TRIUMPH",
+            "image": "PARIS DRONE FESTIVAL.jpeg"
+          },
+          {
+            "name": "03 - CITY OF LIGHTS",
+            "image": "PARIS DRONE FESTIVAL.jpeg"
+          },
+          {
+            "name": "04 - PROMENADING",
+            "image": "PARIS DRONE FESTIVAL.jpeg"
+          },
+          {
+            "name": "05 - STAGE FRIGHT",
+            "image": "PARIS DRONE FESTIVAL.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "THE PIT",
+        "image": "THE PIT.jpeg",
+        "tracks": [
+          {
+            "name": "01 - WAY DOWN IN THE HOLE",
+            "image": "THE PIT.jpeg"
+          },
+          {
+            "name": "02 - INTO THE ABYSS",
+            "image": "THE PIT.jpeg"
+          },
+          {
+            "name": "03 - JACKPOT",
+            "image": "THE PIT.jpeg"
+          },
+          {
+            "name": "04 - THE RED BARON",
+            "image": "THE PIT.jpeg"
+          },
+          {
+            "name": "05 - RESERVOIR",
+            "image": "THE PIT.jpeg"
+          },
+          {
+            "name": "06 - CONVEYOR BELT DIVE",
+            "image": "THE PIT.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "THE GREEN",
+        "image": "THE GREEN.jpeg",
+        "tracks": [
+          {
+            "name": "01 - PART OF THE COURSE",
+            "image": "THE GREEN.jpeg"
+          },
+          {
+            "name": "02 - ROLLING HILLS",
+            "image": "THE GREEN.jpeg"
+          },
+          {
+            "name": "03 - CLUB HOUSE",
+            "image": "THE GREEN.jpeg"
+          },
+          {
+            "name": "04 - FLOP SHOT",
+            "image": "THE GREEN.jpeg"
+          },
+          {
+            "name": "05 - TEE OFF",
+            "image": "THE GREEN.jpeg"
+          },
+          {
+            "name": "06 - THE NINETEENTH HOLE",
+            "image": "THE GREEN.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "HALL 26",
+        "image": "HALL 26.jpeg",
+        "tracks": [
+          {
+            "name": "01 - RACE AROUND THE RAFTERS",
+            "image": "HALL 26.jpeg"
+          },
+          {
+            "name": "02 - HULA HOOP",
+            "image": "HALL 26.jpeg"
+          },
+          {
+            "name": "03 - HALL OF FAME",
+            "image": "HALL 26.jpeg"
+          },
+          {
+            "name": "04 - A ROOF OVER YOUR HEAD",
+            "image": "HALL 26.jpeg"
+          },
+          {
+            "name": "05 - SUPPORT STRUCTURE",
+            "image": "HALL 26.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "BARDWELL'S YARD",
+        "image": "BARDWELLS YARD.jpeg",
+        "tracks": [
+          {
+            "name": "01 - FRONT PORCH FRENZY",
+            "image": "BARDWELLS YARD.jpeg"
+          },
+          {
+            "name": "02 - LEARN SOMETHING TODAY",
+            "image": "BARDWELLS YARD.jpeg"
+          },
+          {
+            "name": "03 - STUFF THAT WORKS",
+            "image": "BARDWELLS YARD.jpeg"
+          },
+          {
+            "name": "04 - KNOW IT ALL",
+            "image": "BARDWELLS YARD.jpeg"
+          },
+          {
+            "name": "05 - HUMBLE BEGINNINGS",
+            "image": "BARDWELLS YARD.jpeg"
+          },
+          {
+            "name": "06 - BIRDHOUSE",
+            "image": "BARDWELLS YARD.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "BANDO CITY",
+        "image": "BANDO CITY.jpeg",
+        "tracks": [
+          {
+            "name": "01 - SPARE TIRES",
+            "image": "BANDO CITY.jpeg"
+          },
+          {
+            "name": "02 - WHO NEEDS STAIRS",
+            "image": "BANDO CITY.jpeg"
+          },
+          {
+            "name": "03 - PIPE DREAM",
+            "image": "BANDO CITY.jpeg"
+          },
+          {
+            "name": "04 - CHOICE MATTERS",
+            "image": "BANDO CITY.jpeg"
+          },
+          {
+            "name": "05 - UNDER CONSTRUCTION",
+            "image": "BANDO CITY.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "THE WOODPECKER",
+        "image": "THE WOODPECKER.jpeg",
+        "tracks": [
+          {
+            "name": "01 - OVER THE HORIZON",
+            "image": "THE WOODPECKER.jpeg"
+          },
+          {
+            "name": "02 - STEEL YARD",
+            "image": "THE WOODPECKER.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "SCHORT CIRCUIT",
+        "image": "SCHORT CIRCUIT.jpeg",
+        "tracks": [
+          {
+            "name": "01 - POLE POSITION",
+            "image": "SCHORT CIRCUIT.jpeg"
+          },
+          {
+            "name": "02 - DISKART",
+            "image": "SCHORT CIRCUIT.jpeg"
+          },
+          {
+            "name": "03 - OVERPASS",
+            "image": "SCHORT CIRCUIT.jpeg"
+          },
+          {
+            "name": "[NADIBFPV] EZ FLOW",
+            "image": "SCHORT CIRCUIT.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "SURTUR",
+        "image": "SURTUR.jpeg",
+        "tracks": [
+          {
+            "name": "01 - HIKING TRAIL",
+            "image": "SURTUR.jpeg"
+          },
+          {
+            "name": "02 - MOUNTAINEERING",
+            "image": "SURTUR.jpeg"
+          },
+          {
+            "name": "03 - SURTALOGI TOUR",
+            "image": "SURTUR.jpeg"
+          },
+          {
+            "name": "04 - THE FLOOR IS LAVA",
+            "image": "SURTUR.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "PERMAFROST",
+        "image": "PERMAFROST.jpeg",
+        "tracks": [
+          {
+            "name": "01 - UNDER PRESSURE",
+            "image": "PERMAFROST.jpeg"
+          },
+          {
+            "name": "02 - MAYDAY",
+            "image": "PERMAFROST.jpeg"
+          },
+          {
+            "name": "03 - SLALOM",
+            "image": "PERMAFROST.jpeg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Uncrashed",
+    "image": "uncrashed.jpg",
+    "maps": [
+      {
+        "name": "un map1",
+        "image": "uncrashed.jpeg",
+        "tracks": [
+          {
+            "name": "um1-track1",
+            "image": "uncrashed.jpeg"
+          },
+          {
+            "name": "um1-track2",
+            "image": "uncrashed.jpeg"
+          }
+        ]
+      },
+      {
+        "name": "un map2",
+        "image": "uncrashed.jpeg",
+        "tracks": [
+          {
+            "name": "um2-track1",
+            "image": "uncrashed.jpeg"
+          },
+          {
+            "name": "um2-track2",
+            "image": "uncrashed.jpeg"
+          }
+        ]
+      }
+    ]
+  }
+]
