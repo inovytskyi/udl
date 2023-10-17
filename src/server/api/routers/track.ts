@@ -19,4 +19,11 @@ export const trackRouter = createTRPCRouter({
         where: { Map: { name: input.map_name } },
       });
     }),
+  get_track: publicProcedure
+    .input(z.object({ track_name: z.string() }))
+    .query(({ input, ctx }) => {
+      return ctx.db.track.findUnique({
+        where: { name: input.track_name },
+      });
+    }),
 });

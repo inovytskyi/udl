@@ -3,6 +3,7 @@ import Link from "next/link";
 type Props = {
   sim?: string;
   map?: string;
+  track?: string;
 };
 export const TreePath = (props: Props) => {
   return (
@@ -18,6 +19,14 @@ export const TreePath = (props: Props) => {
         <>
           <span className="mx-2">{">>"}</span>
           <Link href={"/" + props.sim + "/" + props.map}>{props.map}</Link>{" "}
+        </>
+      )}
+      {!!props.sim && !!props.map && !!props.track && (
+        <>
+          <span className="mx-2">{">>"}</span>
+          <Link href={"/" + props.sim + "/" + props.map + "/" + props.track}>
+            {props.track}
+          </Link>
         </>
       )}
     </div>

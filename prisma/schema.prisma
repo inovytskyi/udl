@@ -18,6 +18,17 @@ model Simulator {
   maps  Map[]
 }
 
+model Record {
+  id      Int    @id @default(autoincrement())
+  track   Track  @relation(fields: [trackId], references: [id])
+  user    User   @relation(fields: [userId], references: [id])
+  time    Int
+  trackId Int
+  userId  String
+
+  @@unique([userId, trackId])
+}
+
 model Map {
   id          Int        @id @default(autoincrement())
   name        String     @unique
@@ -28,11 +39,12 @@ model Map {
 }
 
 model Track {
-  id     Int    @id @default(autoincrement())
-  name   String @unique
+  id     Int      @id @default(autoincrement())
+  name   String   @unique
   image  String
-  Map    Map?   @relation(fields: [mapsId], references: [id])
+  Map    Map?     @relation(fields: [mapsId], references: [id])
   mapsId Int?
+  Record Record[]
 }
 
 model Post {
@@ -84,6 +96,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
   posts         Post[]
+  Record        Record[]
 }
 
 model VerificationToken {

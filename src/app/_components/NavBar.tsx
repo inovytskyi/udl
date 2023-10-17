@@ -5,6 +5,7 @@ import { getServerAuthSession } from "~/server/auth";
 type Props = {
   sim?: string;
   map?: string;
+  track?: string;
 };
 async function NavBar(props: Props) {
   const session = await getServerAuthSession();
@@ -14,13 +15,22 @@ async function NavBar(props: Props) {
     callbackUrl = callbackUrl + props.sim;
     if (props.map) {
       callbackUrl = callbackUrl + "/" + props.map;
+      if (props.map) {
+        callbackUrl = callbackUrl + "/" + props.track;
+      }
     }
   }
 
   return (
     <nav className="flex flex-nowrap items-center justify-start gap-2 border-b-2 border-blue-800 bg-[#2e026d] p-2 text-slate-200">
       <Link href="/" className="flex items-center gap-2">
-        <Image src="/drone_logo.svg" alt="UDL Logo" width="32" height="32" />
+        <Image
+          src="/drone_logo.svg"
+          alt="UDL Logo"
+          width="32"
+          height="32"
+          className="h-8 w-8"
+        />
         UDL
       </Link>
       <div className="flex grow flex-nowrap items-center justify-end gap-2">
