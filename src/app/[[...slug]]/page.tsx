@@ -21,7 +21,7 @@ export default function Home({ params }: { params: { slug: string[] } }) {
   return (
     <>
       <main className="flex min-h-screen flex-col bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white ">
-        <NavBar />
+        <NavBar map={map} sim={simulator} />
         <TreePath map={map} sim={simulator} />
         <div className="flex grow">
           {level === "simulator" ? <SimulatorList /> : null}
