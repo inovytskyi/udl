@@ -23,7 +23,7 @@ export function PostForm(props: Props) {
       setLoad(false);
     },
     onSuccess: () => {
-      // router.refresh();
+      router.refresh();
     },
   });
 
