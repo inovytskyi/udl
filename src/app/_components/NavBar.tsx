@@ -7,7 +7,7 @@ type Props = {
   map?: string;
   track?: string;
 };
-async function NavBar(props: Props) {
+export async function NavBar(props: Props) {
   const session = await getServerAuthSession();
   const logPath = session ? "/api/auth/signout" : "/api/auth/signin";
   let callbackUrl = "/";
@@ -45,5 +45,3 @@ async function NavBar(props: Props) {
     </nav>
   );
 }
-
-export default NavBar;

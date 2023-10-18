@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { headers } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import NavBar from "./_components/NavBar";
+import { NavBar } from "./_components/NavBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
+        <TRPCReactProvider headers={headers()}>
+          <main className="flex min-h-screen flex-col bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white ">
+            <NavBar />
+            {children}
+          </main>
+        </TRPCReactProvider>
       </body>
     </html>
   );

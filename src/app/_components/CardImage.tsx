@@ -6,7 +6,7 @@ type Props = {
 
 export const CardImage = (props: Props) => {
   return (
-    <div className=" rounded-2xlp-4 group flex flex-col ">
+    <div className=" rounded-2xlp-4 group flex flex-col">
       <div className=" filter group-hover:contrast-200 group-hover:grayscale">
         <Image
           className="rounded-3xl"
