@@ -15,7 +15,6 @@ export const recordRouter = createTRPCRouter({
     .input(
       z.object({
         track_name: z.string(),
-        user_id: z.string(),
         time: z.number(),
       }),
     )
@@ -23,18 +22,18 @@ export const recordRouter = createTRPCRouter({
       return ctx.db.record.upsert({
         where: {
           userId_track: {
-            userId: input.user_id,
+            userId: ctx.session.user.id,
             track: input.track_name,
           },
         },
         update: {
           time: input.time,
           track: input.track_name,
-          user: { connect: { id: input.user_id } },
+          user: { connect: { id: ctx.session.user.id } },
         },
         create: {
           track: input.track_name,
-          user: { connect: { id: input.user_id } },
+          user: { connect: { id: ctx.session.user.id } },
           time: input.time,
         },
       });

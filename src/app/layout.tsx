@@ -5,6 +5,8 @@ import { headers } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { NavBar } from "./_components/NavBar";
+import { Suspense } from "react";
+import { Spinner } from "./_components/Spinner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +30,7 @@ export default function RootLayout({
         <TRPCReactProvider headers={headers()}>
           <main className="flex min-h-screen flex-col bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white ">
             <NavBar />
-            {children}
+            <Suspense fallback={<Spinner />}>{children}</Suspense>
           </main>
         </TRPCReactProvider>
       </body>

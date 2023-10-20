@@ -1,16 +1,14 @@
 "use client";
-import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { api } from "~/trpc/react";
 type Props = {
   trackname: string;
-  user_id: string;
 };
 
 export function PostForm(props: Props) {
   const [time, setTime] = useState("");
   const [isLoading, setLoad] = useState(false);
-  const router = useRouter();
+  const utils = api.useContext();
   const mutation = api.records.post_record.useMutation({
     onError: (error) => {
       console.log(error);
@@ -22,30 +20,35 @@ export function PostForm(props: Props) {
       setLoad(false);
     },
     onSuccess: () => {
-      router.refresh();
+      setLoad(false);
+      void utils.records.get_records.invalidate({ trackname: props.trackname });
     },
   });
 
   const submitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.stopPropagation();
     setTime("");
-    // mutation.mutate({
-    //   track: props.trackname,
-    //   user_id: props.user_id,
-    //   time: Number(time),
-    // });
+    mutation.mutate({
+      track_name: props.trackname,
+      time: Number(time),
+    });
   };
   return (
-    <form onSubmit={submitHandler} className="text-black">
+    <form
+      onSubmit={submitHandler}
+      className="flex h-fit items-center gap-2 text-black"
+    >
       <input
         type="text"
         value={time}
         onChange={(event) => setTime(event.target.value)}
-      ></input>
+        disabled={isLoading}
+        className="h-fit rounded-md border-2 border-indigo-700"
+      />
       <button
         type="submit"
         disabled={isLoading}
-        className="bg-blue-500 text-white"
+        className="rounded-md bg-blue-500 px-7 py-1 text-white"
       >
         Post
       </button>
