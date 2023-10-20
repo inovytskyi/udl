@@ -7,9 +7,9 @@ type Props = {
 export const CardImage = (props: Props) => {
   return (
     <div className=" rounded-2xlp-4 group flex flex-col">
-      <div className=" filter group-hover:contrast-200 group-hover:grayscale">
+      <div className=" filter lg:group-hover:contrast-200 lg:group-hover:grayscale">
         <Image
-          className="rounded-3xl"
+          className="w-auto rounded-3xl"
           alt={props.name}
           src={"/images/" + props.image}
           height={160}

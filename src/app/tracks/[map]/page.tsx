@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { CardImage } from "~/app/_components/CardImage";
+import CardList from "~/app/_components/CardLIst";
 import { loadTracks } from "~/app/_service/loadHelper";
 
 export default function Tracks({ params }: { params: { map: string } }) {
@@ -8,19 +7,7 @@ export default function Tracks({ params }: { params: { map: string } }) {
   if (tracks.length > 0)
     return (
       <>
-        <div className="m-4 flex grow flex-wrap gap-4">
-          {tracks.map((track) => {
-            return (
-              <Link
-                key={track.name}
-                href={"/records/" + track.name}
-                scroll={false}
-              >
-                <CardImage image={track.image} name={track.name} />
-              </Link>
-            );
-          })}
-        </div>
+        <CardList data={tracks} path={"/records/"} />
       </>
     );
   else return null;
