@@ -11,40 +11,14 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
-model Simulator {
-  id    Int    @id @default(autoincrement())
-  name  String @unique
-  image String
-  maps  Map[]
-}
-
 model Record {
-  id      Int    @id @default(autoincrement())
-  track   Track  @relation(fields: [trackId], references: [id])
-  user    User   @relation(fields: [userId], references: [id])
-  time    Int
-  trackId Int
-  userId  String
+  id     Int    @id @default(autoincrement())
+  track  String @unique
+  user   User   @relation(fields: [userId], references: [id])
+  time   Int
+  userId String
 
-  @@unique([userId, trackId])
-}
-
-model Map {
-  id          Int        @id @default(autoincrement())
-  name        String     @unique
-  image       String
-  tracks      Track[]
-  Simulator   Simulator? @relation(fields: [simulatorId], references: [id])
-  simulatorId Int?
-}
-
-model Track {
-  id     Int      @id @default(autoincrement())
-  name   String   @unique
-  image  String
-  Map    Map?     @relation(fields: [mapsId], references: [id])
-  mapsId Int?
-  Record Record[]
+  @@unique([userId, track])
 }
 
 // Necessary for Next auth

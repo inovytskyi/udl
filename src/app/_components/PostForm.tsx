@@ -1,10 +1,9 @@
 "use client";
-import { type Track } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { api } from "~/trpc/react";
 type Props = {
-  track: Track;
+  trackname: string;
   user_id: string;
 };
 
@@ -30,11 +29,11 @@ export function PostForm(props: Props) {
   const submitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.stopPropagation();
     setTime("");
-    mutation.mutate({
-      track_id: props.track.id,
-      user_id: props.user_id,
-      time: Number(time),
-    });
+    // mutation.mutate({
+    //   track: props.trackname,
+    //   user_id: props.user_id,
+    //   time: Number(time),
+    // });
   };
   return (
     <form onSubmit={submitHandler} className="text-black">

@@ -7,14 +7,14 @@ export const recordRouter = createTRPCRouter({
     .query(({ input, ctx }) => {
       return ctx.db.record.findMany({
         include: { user: true },
-        where: { track: { name: input.trackname } },
+        where: { track: input.trackname },
         orderBy: { time: "asc" },
       });
     }),
   post_record: protectedProcedure
     .input(
       z.object({
-        track_id: z.number(),
+        track_name: z.string(),
         user_id: z.string(),
         time: z.number(),
       }),
@@ -22,18 +22,18 @@ export const recordRouter = createTRPCRouter({
     .mutation(({ input, ctx }) => {
       return ctx.db.record.upsert({
         where: {
-          userId_trackId: {
+          userId_track: {
             userId: input.user_id,
-            trackId: input.track_id,
+            track: input.track_name,
           },
         },
         update: {
           time: input.time,
-          track: { connect: { id: input.track_id } },
+          track: input.track_name,
           user: { connect: { id: input.user_id } },
         },
         create: {
-          track: { connect: { id: input.track_id } },
+          track: input.track_name,
           user: { connect: { id: input.user_id } },
           time: input.time,
         },
