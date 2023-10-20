@@ -11,7 +11,11 @@ export default function Tracks({ params }: { params: { map: string } }) {
         <div className="m-4 flex grow flex-wrap gap-4">
           {tracks.map((track) => {
             return (
-              <Link key={track.name} href={"/records/" + track.name}>
+              <Link
+                key={track.name}
+                href={"/records/" + track.name}
+                scroll={false}
+              >
                 <CardImage image={track.image} name={track.name} />
               </Link>
             );

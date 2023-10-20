@@ -10,7 +10,7 @@ export default function SimView(props: { simulators: Simulator[] }) {
     <div className="m-4 flex grow flex-wrap gap-4">
       {props.simulators.map((item) => {
         return (
-          <Link key={item.name} href={"/maps/" + item.name}>
+          <Link key={item.name} href={"/maps/" + item.name} scroll={false}>
             <CardImage image={item.image} name={item.name} />
           </Link>
         );

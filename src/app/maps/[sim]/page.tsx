@@ -11,7 +11,7 @@ export default function Maps({ params }: { params: { sim: string } }) {
         <div className="m-4 flex grow flex-wrap gap-4">
           {maps.map((map) => {
             return (
-              <Link key={map.name} href={"/tracks/" + map.name}>
+              <Link key={map.name} href={"/tracks/" + map.name} scroll={false}>
                 <CardImage image={map.image} name={map.name} />
               </Link>
             );
