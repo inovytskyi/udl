@@ -1,38 +1,38 @@
 "use client";
 import { type Track } from "@prisma/client";
-import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 import { useState, type FormEvent } from "react";
 import { api } from "~/trpc/react";
+
 type Props = {
   track: Track;
-  user_id: string;
 };
 
 export function PostForm(props: Props) {
+  const { data: session, status } = useSession();
   const [time, setTime] = useState("");
   const [isLoading, setLoad] = useState(false);
-  const router = useRouter();
+  const utils = api.useContext();
   const mutation = api.records.post_record.useMutation({
     onError: (error) => {
-      console.log(error);
-    },
-    onMutate: () => {
-      setLoad(true);
-    },
-    onSettled: () => {
       setLoad(false);
+      console.log("ERROR!!!:", error);
     },
     onSuccess: () => {
-      router.refresh();
+      setLoad(false);
+      void utils.records.get_records.invalidate({
+        trackname: props.track.name,
+      });
     },
   });
+  if (!session || status !== "authenticated") return null;
 
   const submitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.stopPropagation();
     setTime("");
+    setLoad(true);
     mutation.mutate({
       track_id: props.track.id,
-      user_id: props.user_id,
       time: Number(time),
     });
   };
