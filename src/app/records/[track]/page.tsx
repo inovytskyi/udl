@@ -17,7 +17,7 @@ export default async function Records({
   if (track) {
     return (
       <>
-        <div className="flex-warp m-4 flex gap-4">
+        <div className="m-4 flex flex-wrap gap-4">
           <CardImage name={track.name} image={track.image} />
           <Suspense fallback={<Spinner />}>
             <RecordsView trackname={track_name} />
